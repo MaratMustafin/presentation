@@ -19,16 +19,13 @@ export const theme = vsDark;
 ---
 
 ## Правила
-- 
-- 
-- если чето знаете, можете добавить
--
+- заходим вовремя на урок, не опаздываем
+- запоминать, выполнять материал
+- подсказывайте, поправляйте, автор сам много незнает
 
-<CodeSurfer>
+---
 
-```python
-План на 5 дней. 
-
+# План на 5 дней.
 
 ---
 
@@ -67,7 +64,15 @@ export const theme = vsDark;
 
 ---
 
-```python
+## Базовый python
+
+---
+
+<CodeSurferColumns>
+
+<Step>
+
+```python title="print" subtitle="математические операции"
 print("Hello World!\n")
 
 print(2+3*3)
@@ -75,10 +80,11 @@ print(3**3)
 print(9/3)
 print(9//3)
 print(9%3)
-
 ```
 
----
+</Step>
+
+<Step subtitle="создание переменных">
 
 ```python
 name = "Marat"
@@ -86,7 +92,16 @@ age = 21
 print("My name is",name)
 ```
 
+</Step>
+
+
+</CodeSurferColumns>
+
 ---
+
+<CodeSurferColumns>
+
+<Step title="в чём разница">
 
 ```python
 num = input("Enter first num:")
@@ -102,27 +117,80 @@ res = num + num2
 print(res)
 ```
 
+</Step>
+
+<Step title="в чём разница">
+
+```python 3:4 subtitle="выведет строку"
+num = input("Enter first num:")
+num2 = input("Enter second num:")
+res = num + num2
+print(res)
+```
+
+```python 3:4 subtitle="выведет число"
+num = int(input("Enter first num:"))
+num2 = int(input("Enter second num:"))
+res = num + num2
+print(res)
+```
+
+</Step>
+
+
+</CodeSurferColumns>
+
 ---
 
-## Типы данных
+<CodeSurfer>
 
-```python
+
+```python 1 title="типы данных" subtitle="число"
 int()
 str()
 float()
 bool()
-object()
 ```
+
+```python 2 title="типы данных" subtitle="строка"
+int()
+str()
+float()
+bool()
+```
+
+```python 3 title="типы данных" subtitle="число с точкой"
+int()
+str()
+float()
+bool()
+```
+
+```python 4 title="типы данных" subtitle="логический тип"
+int()
+str()
+float()
+bool()
+```
+
+</CodeSurfer>
 
 ---
 
-## Условные операторы
+<CodeSurferColumns>
+
+<Step title="условие" subtitle="одиночное условие">
 
 ```python
 num = int(input("Enter first num:"))
 if num > 0:
   print("Num is bigger than 0")
 ```
+
+
+</Step>
+
+<Step title="условие" subtitle="многа условия">
 
 ```python
 num = int(input("Enter first num:"))
@@ -133,6 +201,10 @@ elif num < 0:
 else: 
   print("It's 0")
 ```
+
+</Step>
+
+<Step title="условия" subtitle="вложенные условия">
 
 ```python
 num = int(input("Enter first num:"))
@@ -149,102 +221,190 @@ else:
 ```
 
 
+</Step>
+
+</CodeSurferColumns>
+
 ---
 
-## Логические операторы
+<CodeSurfer>
 
-```python
+```python title="логический оператор"
 and 
 or 
 not 
 ```
 
-```python 
+```python title="логический оператор" subtitle="и"
 True and True # => True
 True and False # = False
 False and True # => False 
 False and False # => False
 ```
 
-```python
+```python title="логический оператор" subtitle="или"
 True or True # => True 
 True or False # => True 
 False or True # => True 
 False or False # => False 
 ```
 
-```python
+```python title="логический оператор" subtitle="не"
 not True # => False 
 not False # => True 
 ```
 
+</CodeSurfer>
+
 ---
 
-Циклы 
-```python
+<CodeSurfer>
+
+```python title="циклы"
 while True:
   stuff()
   if fail_condition:
     break
 ```
 
-```python 
-i = 0 
+```python title="циклы"
+i = 0  
 while i < 10:
   i+=1
 ```
 
-```python 
+```python title="циклы"
 for i in range(0,10):
   print(i)
 ```
 
-```python
+```python title="циклы"
 for i in [1,2,3,4,5]:
   print(i)
 ```
 
-```python
+```python title="циклы"
 for id,item in enumerate([1,2,3,4,5]):
   print(id,item)
 ```
 
+</CodeSurfer>
+
 ---
 
-## Структура данных
+<CodeSurfer>
 
-```python
+```python 1 title="структура данных"
 dict() # => словари
 tuple() # => кортежи
 list() # => массив
 set() # => множества
 ```
 
+```python 2:5 title="структура данных"
+dict() # => словари
+records = {
+  'Suzan' : 'shemale',
+  'Tom' : 'male'
+}
+tuple() # => кортежи
+list() # => массив
+set() # => множества
+```
+
+```python 2 title="структура данных"
+dict() # => словари
+tuple() # => кортежи
+list() # => массив
+set() # => множества
+```
+
+```python 3 title="структура данных"
+dict() # => словари
+tuple() # => кортежи
+prettyNumber = (7,11,22,33,44,55,66,77,88,99)
+list() # => массив
+set() # => множества
+```
+
+```python 3 title="структура данных"
+dict() # => словари
+tuple() # => кортежи
+list() # => массив
+set() # => множества
+```
+
+
+```python 4 title="структура данных"
+dict() # => словари
+tuple() # => кортежи
+list() # => массив
+direction = [False,True,False,False]
+set() # => множества
+```
+
+```python 4 title="структура данных"
+dict() # => словари
+tuple() # => кортежи
+list() # => массив
+set() # => множества
+```
+
+```python 5 title="структура данных"
+dict() # => словари
+tuple() # => кортежи
+list() # => массив
+set() # => множества
+pinCode = {'1111','1111','1111','2222'}
+```
+
+
+</CodeSurfer>
+
 ---
 
-Функции
+<CodeSurferColumns>
+
+
+<Step title="функции">
 
 ```python
 def pr(string,num):
-  print(string,num)
-  pass 
+    print(string,num)
+    pass 
 ```
+
+</Step>
+
+<Step title="функции">
 
 ```python
 def summ(a,b):
-  res = a+big
-  return res
+    res = a+big
+    return res
 ```
+
+</Step>
+
+<Step title="функции">
 
 ```python
 def test(*args):
-  print(args)
-``` 
+    print(args)
+```
+
+</Step>
+
+<Step title="функции">
 
 ```python 
 def ktest(**kwargs):
-  print(kwargs)
+    print(kwargs)
 ``` 
+
+</Step>
+
+<Step title="вызов функций">
 
 ```python 
 pr("Number is",56)
@@ -252,20 +412,28 @@ a = summ(23,56)
 pr("Number is", a)
 ```
 
+</Step>
+
+</CodeSurferColumns>
+
 ---
 
-## Модули 
+<CodeSurfer>
 
-```python 
+```python title="модули"
 import random as r 
 from random import randint
 ```
 
+</CodeSurfer>
+
 ---
 
-## Классы и объекты
+<CodeSurferColumns>
 
-```python
+<Step title="классы и объекты">
+
+```python showNumbers
 class Car:
     name = "None"
     weight = 1000
@@ -302,14 +470,219 @@ shkoda = Car("Shkoda", 1300)
 shkoda.set("Shkoda", 1300, 235.30)
 print(shkoda.name)
 ```
+</Step>
 
----
-<CodeSurfer>
+<Step title="классы и объекты">
 
-```python
-type(str(123213))
+```python 1:5 showNumbers subtitle="класс Car"
+class Car:
+    name = "None"
+    weight = 1000
+    speed = 200.00
+
+    def __init__(self, name, weight):
+        self.name = name
+        self.weight = weight
+        print(self.name, " has weight", self.weight)
+
+    def set(self, name, weight, speed):
+        self.name = name
+        self.weight = weight
+        self.speed = speed
+
+class Truck(Car):  # Унаследовали класс Car
+    wheels = 8
+
+    def __init__(self):
+        pass  # Конструктор без параметров, который ничего не возвращает
+              # Без пустого конструктора нужно передать параметры name, weight
+
+man = Truck()  # Создали объект man
+man.wheels = 12
+man.set("Man", 4500, 140.5)
+print(man.weight)
+
+
+audi = Car("Audi", 1450)
+audi.set("Audi", 1450, 320.30)
+print(audi.name)
+
+shkoda = Car("Shkoda", 1300)
+shkoda.set("Shkoda", 1300, 235.30)
+print(shkoda.name)
 ```
+</Step>
 
-</CodeSurfer>
+<Step title="классы и объекты">
+
+```python 6:10 showNumbers subtitle="конструктор"
+
+class Car:
+    name = "None"
+    weight = 1000
+    speed = 200.00
+
+    def __init__(self, name, weight):
+        self.name = name
+        self.weight = weight
+        print(self.name, " has weight", self.weight)
+
+    def set(self, name, weight, speed):
+        self.name = name
+        self.weight = weight
+        self.speed = speed
+
+class Truck(Car):  # Унаследовали класс Car
+    wheels = 8
+
+    def __init__(self):
+        pass  # Конструктор без параметров, который ничего не возвращает
+              # Без пустого конструктора нужно передать параметры name, weight
+
+man = Truck()  # Создали объект man
+man.wheels = 12
+man.set("Man", 4500, 140.5)
+print(man.weight)
+
+
+audi = Car("Audi", 1450)
+audi.set("Audi", 1450, 320.30)
+print(audi.name)
+
+shkoda = Car("Shkoda", 1300)
+shkoda.set("Shkoda", 1300, 235.30)
+print(shkoda.name)
+```
+</Step>
+
+<Step title="классы и объекты">
+
+```python 11:14 showNumbers subtitle="метод set()"
+
+class Car:
+    name = "None"
+    weight = 1000
+    speed = 200.00
+
+    def __init__(self, name, weight):
+        self.name = name
+        self.weight = weight
+        print(self.name, " has weight", self.weight)
+
+    def set(self, name, weight, speed):
+        self.name = name
+        self.weight = weight
+        self.speed = speed
+
+class Truck(Car):  # Унаследовали класс Car
+    wheels = 8
+
+    def __init__(self):
+        pass  # Конструктор без параметров, который ничего не возвращает
+              # Без пустого конструктора нужно передать параметры name, weight
+
+man = Truck()  # Создали объект man
+man.wheels = 12
+man.set("Man", 4500, 140.5)
+print(man.weight)
+
+
+audi = Car("Audi", 1450)
+audi.set("Audi", 1450, 320.30)
+print(audi.name)
+
+shkoda = Car("Shkoda", 1300)
+shkoda.set("Shkoda", 1300, 235.30)
+print(shkoda.name)
+```
+</Step>
+
+<Step title="классы и объекты">
+
+```python 16:22 showNumbers subtitle="класс Track"
+
+class Car:
+    name = "None"
+    weight = 1000
+    speed = 200.00
+
+    def __init__(self, name, weight):
+        self.name = name
+        self.weight = weight
+        print(self.name, " has weight", self.weight)
+
+    def set(self, name, weight, speed):
+        self.name = name
+        self.weight = weight
+        self.speed = speed
+
+class Truck(Car):  # Унаследовали класс Car
+    wheels = 8
+
+    def __init__(self):
+        pass  # Конструктор без параметров, который ничего не возвращает
+              # Без пустого конструктора нужно передать параметры name, weight
+
+man = Truck()  # Создали объект man
+man.wheels = 12
+man.set("Man", 4500, 140.5)
+print(man.weight)
+
+
+audi = Car("Audi", 1450)
+audi.set("Audi", 1450, 320.30)
+print(audi.name)
+
+shkoda = Car("Shkoda", 1300)
+shkoda.set("Shkoda", 1300, 235.30)
+print(shkoda.name)
+```
+</Step>
+
+<Step title="классы и объекты">
+
+```python 23:36 showNumbers
+
+class Car:
+    name = "None"
+    weight = 1000
+    speed = 200.00
+
+    def __init__(self, name, weight):
+        self.name = name
+        self.weight = weight
+        print(self.name, " has weight", self.weight)
+
+    def set(self, name, weight, speed):
+        self.name = name
+        self.weight = weight
+        self.speed = speed
+
+class Truck(Car):  # Унаследовали класс Car
+    wheels = 8
+
+    def __init__(self):
+        pass  # Конструктор без параметров, который ничего не возвращает
+              # Без пустого конструктора нужно передать параметры name, weight
+
+man = Truck()  # Создали объект man
+man.wheels = 12
+man.set("Man", 4500, 140.5)
+print(man.weight)
+
+
+audi = Car("Audi", 1450)
+audi.set("Audi", 1450, 320.30)
+print(audi.name)
+
+shkoda = Car("Shkoda", 1300)
+shkoda.set("Shkoda", 1300, 235.30)
+print(shkoda.name)
+```
+</Step>
+
+</CodeSurferColumns>
 
 ---
+
+## Спасибо за урок
