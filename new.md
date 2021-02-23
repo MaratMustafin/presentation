@@ -3,9 +3,8 @@ import {
   CodeSurferColumns,
   Step,
 } from "code-surfer";
-import { Image, Notes, Head } from "mdx-deck";
+import { Image, Notes, Head, Box } from "mdx-deck";
 import { github, vsDark } from "@code-surfer/themes";
-import customTheme from "./custom-theme"
 
 export const theme = vsDark;
 
@@ -39,14 +38,14 @@ export const theme = vsDark;
 
 2 день
 - Повторение
-- Pyxel API 
+- Pyxel
 - Вопросы/Ответы
 
 ---
 
 3 день
 - Повторение
-- Werkzeug API
+- Flask
 - Вопросы/Ответы
 
 ---
@@ -557,7 +556,7 @@ print(shkoda.name)
 
 <Step title="классы и объекты">
 
-```python 11:14 showNumbers subtitle="метод set()"
+```python 11:15 showNumbers subtitle="метод set()"
 
 class Car:
     name = "None"
@@ -686,3 +685,324 @@ print(shkoda.name)
 ---
 
 ## Спасибо за урок
+
+---
+
+# 2 день.
+
+---
+
+2 день
+- Повторение
+- [Pyxel](https://github.com/kitao/pyxel)
+- Вопросы/Ответы
+
+---
+
+# Что такое API?
+
+---
+
+- [API](https://habr.com/ru/post/464261/#api)
+- [PythonAwesome](https://awesome-python.com/)
+- [PIP](https://pip.pypa.io/en/stable/)
+- [PyPi](https://pypi.org/)
+- [SetupTools](https://pypi.org/project/setuptools/)
+
+---
+
+Сегодня будем разбирать игру змейка
+- [исходный код](https://github.com/CaffeinatedTech/Python_Nibbles)
+- [видео](https://www.youtube.com/watch?v=Qg16VhEo2Qs)
+
+---
+
+<CodeSurferColumns>
+
+<Step title="nibbles" >
+
+```python 1:10 showNumbers file="./nibbles1.py" subtitle="это что"
+```
+
+</Step>
+
+<Step title="nibbles" >
+
+```python 1:10 showNumbers file="./nibbles1.py" subtitle="это что"
+```
+
+</Step>
+
+<Step title="nibbles" >
+
+```python 13:18 showNumbers file="./nibbles1.py" subtitle="это что"
+```
+
+</Step>
+
+<Step title="nibbles" >
+
+```python 21:24 showNumbers file="./nibbles1.py" subtitle="это что"
+```
+
+</Step>
+
+<Step title="nibbles" >
+
+```python 27:37 showNumbers file="./nibbles1.py" subtitle="это что"
+```
+
+</Step>
+
+<Step title="nibbles" >
+
+```python 42:47 showNumbers file="./nibbles1.py" subtitle="это что"
+```
+
+</Step>
+
+<Step title="nibbles" >
+
+```python 49:50 showNumbers file="./nibbles1.py" subtitle="это что"
+```
+
+</Step>
+
+<Step title="nibbles" >
+
+```python 52:61 showNumbers file="./nibbles1.py" subtitle="это что"
+```
+
+</Step>
+
+<Step title="nibbles" >
+
+```python 63:65 showNumbers file="./nibbles1.py" subtitle="это что"
+```
+
+</Step>
+
+<Step title="nibbles" >
+
+```python 68:76 showNumbers file="./nibbles1.py" subtitle="это что"
+```
+
+</Step>
+
+<Step title="nibbles" >
+
+```python 78:83 showNumbers file="./nibbles1.py" subtitle="это что"
+```
+
+</Step>
+
+<Step title="nibbles" >
+
+```python 84:99 showNumbers file="./nibbles1.py" subtitle="это что"
+```
+
+</Step>
+
+<Step title="nibbles" >
+
+```python 101:110 showNumbers file="./nibbles1.py" subtitle="это что"
+```
+
+</Step>
+
+<Step title="nibbles" >
+
+```python 113:122 showNumbers file="./nibbles1.py" subtitle="это что"
+```
+
+</Step>
+
+<Step title="nibbles" >
+
+```python 126:135 showNumbers file="./nibbles1.py" subtitle="это что"
+```
+
+</Step>
+
+<Step title="nibbles" >
+
+```python 137:139 showNumbers file="./nibbles1.py" subtitle="это что"
+```
+
+</Step>
+
+<Step title="nibbles" >
+
+```python 141:145 showNumbers file="./nibbles1.py" subtitle="это что"
+```
+
+</Step>
+
+<Step title="nibbles" >
+
+```python 147:150 showNumbers file="./nibbles1.py" subtitle="это что"
+```
+
+</Step>
+
+<Step title="nibbles" >
+
+```python 152:155 showNumbers file="./nibbles1.py" subtitle="это что"
+```
+
+</Step>
+
+<Step title="nibbles" >
+
+```python 158 showNumbers file="./nibbles1.py" subtitle="запускатор"
+```
+
+</Step>
+
+<Step title="nibbles" >
+
+```python 158:184 showNumbers file="./nibbles1.py" subtitle="это что"
+```
+
+</Step>
+
+<Step title="nibbles" >
+
+```python 186:206 showNumbers file="./nibbles1.py" subtitle="это что"
+```
+
+</Step>
+
+<Step title="nibbles" >
+
+```python 208:219 showNumbers file="./nibbles1.py" subtitle="это что"
+```
+
+</Step>
+
+<Step title="nibbles" >
+
+```python 221:227 showNumbers file="./nibbles1.py" subtitle="это что"
+```
+
+</Step>
+
+<Step title="nibbles" >
+
+```python 229:239 showNumbers file="./nibbles1.py" subtitle="это что"
+```
+
+</Step>
+
+<Step title="nibbles" >
+
+```python 241:262 showNumbers file="./nibbles1.py" subtitle="это что"
+```
+
+</Step>
+
+<Step title="nibbles" >
+
+```python 243:249 showNumbers file="./nibbles1.py" subtitle="это что"
+```
+
+</Step>
+
+<Step title="nibbles" >
+
+```python 251:257 showNumbers file="./nibbles1.py" subtitle="это что"
+```
+
+</Step>
+
+<Step title="nibbles" >
+
+```python 258:262 showNumbers file="./nibbles1.py" subtitle="это что"
+```
+
+</Step>
+
+<Step title="nibbles" >
+
+```python 263:286 showNumbers file="./nibbles1.py" subtitle="это что"
+```
+
+</Step>
+
+<Step title="nibbles" >
+
+```python 287:316 showNumbers file="./nibbles1.py" subtitle="это что"
+```
+
+</Step>
+
+<Step title="nibbles" >
+
+```python 290:295 showNumbers file="./nibbles1.py" subtitle="это что"
+```
+
+</Step>
+
+<Step title="nibbles" >
+
+```python 297:306 showNumbers file="./nibbles1.py" subtitle="это что"
+```
+
+</Step>
+
+<Step title="nibbles" >
+
+```python 308:316 showNumbers file="./nibbles1.py" subtitle="это что"
+```
+
+</Step>
+
+<Step title="nibbles" >
+
+```python 317:351 showNumbers file="./nibbles1.py" subtitle="это что"
+```
+
+</Step>
+
+<Step title="nibbles" >
+
+```python 319:323 showNumbers file="./nibbles1.py" subtitle="это что"
+```
+
+</Step>
+
+<Step title="nibbles" >
+
+```python 324:330 showNumbers file="./nibbles1.py" subtitle="это что"
+```
+
+</Step>
+
+<Step title="nibbles" >
+
+```python 331:337 showNumbers file="./nibbles1.py" subtitle="это что"
+```
+
+</Step>
+
+<Step title="nibbles" >
+
+```python 338:344 showNumbers file="./nibbles1.py" subtitle="это что"
+```
+
+</Step>
+
+<Step title="nibbles" >
+
+```python 345:351 showNumbers file="./nibbles1.py" subtitle="это что"
+```
+
+</Step>
+
+
+</CodeSurferColumns>
+
+
+---
+
+# Спасибо за урок
