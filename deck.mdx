@@ -3,7 +3,7 @@ import {
   CodeSurferColumns,
   Step,
 } from "code-surfer";
-import { Image, Notes, Head, Box } from "mdx-deck";
+import { Image, Notes, Head } from "mdx-deck";
 import { github, vsDark } from "@code-surfer/themes";
 
 export const theme = vsDark;
@@ -1002,6 +1002,30 @@ print(shkoda.name)
 
 </CodeSurferColumns>
 
+
+---
+
+<CodeSurfer>
+
+```python title="дефолтный установщик"
+from setuptools import setup,find_packages
+
+setup(
+    name='nibbles',
+    version='1.0',
+    description='Описание игры',
+    author=' CaffeinatedTech ',
+    author_email='',
+    url='https://github.com/CaffeinatedTech/Python_Nibbles',
+    py_modules=['main'],
+    packages = find_packages(),
+    install_requires=[
+          'pyxel',
+      ],
+)
+```
+
+</CodeSurfer>
 
 ---
 

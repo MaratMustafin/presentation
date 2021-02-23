@@ -1005,4 +1005,29 @@ print(shkoda.name)
 
 ---
 
+<CodeSurfer>
+
+```python
+from setuptools import setup,find_packages
+
+setup(
+    name='nibbles',
+    version='1.0',
+    description='Описание игры',
+    author=' CaffeinatedTech ',
+    author_email='',
+    url='https://github.com/CaffeinatedTech/Python_Nibbles',
+    py_modules=['main'],
+    packages = find_packages(),
+    install_requires=[
+          'pyxel',
+      ],
+)
+```
+
+</CodeSurfer>
+
+---
+
+
 # Спасибо за урок
